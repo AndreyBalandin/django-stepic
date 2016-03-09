@@ -1,5 +1,5 @@
-# Ignore everything in this directory
+# Ignore in this directory
 index.html
 
-# Except this file
-!.gitignore
+# Ignore *.pyc files recursively
+**/*.pyc

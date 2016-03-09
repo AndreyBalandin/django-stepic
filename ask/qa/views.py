@@ -1,3 +1,4 @@
+from django.http import HttpResponse
 from django.http import Http404
 from django.shortcuts import render, get_object_or_404
 from django.views.decorators.http import require_GET
@@ -13,3 +14,7 @@ def question(request, id):
 	'question': question,
 	'answers': question.answer_set.all(),
 	})
+
+
+def test(request, *args, **kwargs):
+    return HttpResponse('Test passed.')
