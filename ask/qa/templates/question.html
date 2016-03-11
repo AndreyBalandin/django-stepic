@@ -4,9 +4,11 @@
 </head>
 <body>
 
-  <h1>Title: {{ question.title }}</h1>
-  <h3>Question: {{ question.text }}</h3>
-
+  <h1>Question</h1>
+  <h3>Title: {{ question.title }}</h3>
+  <h3>Text:  {{ question.text }}</h3>
+  <hr>
+ 
   <h3>Answers:</h3>
   {% for answer in answers %}
     <p>{{ answer.text }}</p>
