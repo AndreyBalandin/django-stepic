@@ -10,10 +10,11 @@ urlpatterns = patterns('qa.views',
 
     url(r'^question/(?P<id>\d+)/', 'question', name='question'),
     url(r'^popular/', 'popular', name='popular'),
+    url(r'^ask/', 'ask', name='ask'),
+    url(r'^answer/', 'answer', name='answer'),
     url(r'^$', 'main', name='main'),
     url(r'^login/', 'test', name='login'),
     url(r'^signup/', 'test', name='signup'),
-    url(r'^ask/', 'test', name='ask'),
     url(r'^new/', 'test', name='new'),
 
     )
