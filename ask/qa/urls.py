@@ -12,9 +12,8 @@ urlpatterns = patterns('qa.views',
     url(r'^popular/', 'popular', name='popular'),
     url(r'^ask/', 'ask', name='ask'),
     url(r'^answer/', 'answer', name='answer'),
+    url(r'^login/', 'my_login', name='login'),
+    url(r'^signup/', 'signup', name='signup'),
     url(r'^$', 'main', name='main'),
-    url(r'^login/', 'test', name='login'),
-    url(r'^signup/', 'test', name='signup'),
-    url(r'^new/', 'test', name='new'),
 
     )
